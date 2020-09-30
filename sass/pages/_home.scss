@@ -1,0 +1,152 @@
+.width{
+    max-width: 375px;
+}
+input[type="search"]{
+    border: none;
+    background: none;
+    width: auto;
+}
+::placeholder{
+        color: $dark-grey;
+        font-family: $basefontfamily;
+        font-weight: bold;
+        font-size: 15px;
+    }
+.introduction{
+    text-align: center;
+    &__explore{
+        background-color: $light-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 50px;
+        h1{
+            padding: 20px 60px 10px;
+        }
+        p{
+            padding-left: 20px;
+            padding-bottom: 30px;
+        }
+    }
+    &__operation{
+        padding-left: 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            padding: 50px 0px 35px 0px;
+            align-self: flex-start;
+        }
+    }
+}
+
+.step{
+    background-color: $light-grey;
+    border-radius: 20px;
+    height: 65px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: $shadow;
+    &__number{
+        background-color: $colour-primary;
+        position: absolute;
+        padding:3px 6px 3px 6px;
+        border-radius: 25px;
+        color: white;
+        left:-10px;
+    }
+    i{
+        padding:0 20px 0 20px;
+        color: $grey;
+        font-size:1.5em;
+    }
+}
+.endstep{
+    background-color: lighten($colour-primary,32%);
+    i{
+        color:$colour-primary;
+    }
+}
+.list{
+    background-color: $light-grey;
+    padding-left: 20px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    h1{
+        padding-top: 35px;
+    }
+}
+.card{
+    width: 335px;
+    height: 230px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: $shadow;
+    margin-top: 20px;
+    &__description{
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        bottom: 0;
+        padding-left: 10px;
+    }
+    &__text{
+        padding:10px 0 10px 0;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    &__like{
+        align-self: flex-end;
+        font-size:1.5em;
+        position: absolute;
+        bottom:17px;
+        right:20px;
+    }
+    &--new{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $light-green;
+        color: $green;
+        top:10px;
+        right: 10px;
+        height: 25px;
+        width: 70px;
+        border-radius: 5px;
+    }
+    a{
+        display:block;
+        width: 100%;
+        height: 100%;
+    }
+}
+.card1{
+    background: url(../../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.card2{
+    background: url(../../public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.card3{
+    background: url(../../public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.card4{
+    background: url(../../public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}

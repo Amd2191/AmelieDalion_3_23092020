@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    &__logo{
+        display: flex;
+        min-height: 60px;
+            img{
+            max-width: 180px;}
+        }
+    &__place{
+    background-color: #eaeaea;
+    box-shadow: inset 0px 10px 5px -10px $dark-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+        i{
+            height: 15px;
+            color: $dark-grey;
+        }
+        form{
+            align-self: center;
+            padding-left:20px;
+        }
+    }
+}
+.welcome{
+    align-items: flex-start;
+}

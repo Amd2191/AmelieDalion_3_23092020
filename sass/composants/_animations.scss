@@ -1,0 +1,32 @@
+
+.loader{
+    width:20vw;
+    height: 20vw;
+    display: inline-block;
+    border: 6px solid $colour-primary;
+    border-top-color: $colour-secondary;
+    border-radius: 50%;
+    margin-top: 25vh;
+    animation: spin 2s ease-in-out infinite;
+    &__wrapper{
+        position: absolute;
+        background-color: $light-grey;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        animation: appear 1ms 2s ease-in-out;
+        animation-fill-mode: both;
+    }
+}
+.frame__like:hover path{
+    fill: url(#gradient);
+    stroke: transparent;
+}
+.gradient{
+    &--bottom{
+        stop-color:$colour-secondary;
+    }
+    &--top{
+        stop-color:$colour-primary;
+    }
+}

@@ -1,0 +1,11 @@
+.btn-main{
+    color: white;
+    background: linear-gradient($colour-secondary,$colour-primary);
+    border-radius: 25px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    align-self: center;
+    box-shadow: $shadow;
+    font-size: 15px;
+}

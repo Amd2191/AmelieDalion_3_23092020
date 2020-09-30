@@ -1,0 +1,41 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    font-family:$basefontfamily;
+    font-size: 12px;
+}
+.width{
+    max-width: 375px;
+}
+h1{
+    font-size: 22px;
+    font-weight: bold;
+}
+.menu h2{
+    font-family: $headingsfontfamily;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+h3{
+    font-weight: bold;
+}
+h4{
+    font-family: $headingsfontfamily;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+p{
+    font-family:$basefontfamily;
+    font-size: 17px;
+}
+a, a:visited, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+
