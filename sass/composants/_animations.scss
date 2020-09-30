@@ -22,6 +22,10 @@
     fill: url(#gradient);
     stroke: transparent;
 }
+.card__like:hover path{
+    fill: url(#gradient);
+    stroke: transparent;
+}
 .gradient{
     &--bottom{
         stop-color:$colour-secondary;
@@ -29,4 +33,13 @@
     &--top{
         stop-color:$colour-primary;
     }
+}
+.appetizer{
+    animation:courses 0.8s ease-in 0.5s both;
+}
+.main{
+    animation:courses 0.8s ease-in 1.5s both;
+    }
+.desert{
+    animation:courses 0.8s ease-in 2.5s both;
 }

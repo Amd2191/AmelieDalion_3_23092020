@@ -8,4 +8,8 @@
     align-self: center;
     box-shadow: $shadow;
     font-size: 15px;
+    &:hover{
+        background: linear-gradient(lighten($colour-secondary,3%),lighten($colour-primary,3%));
+        box-shadow: $darkshadow;
+    }
 }

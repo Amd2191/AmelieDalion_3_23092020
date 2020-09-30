@@ -30,6 +30,7 @@
     margin-top: 15px;
     position: relative;
     max-width: 350px;
+    z-index: 1;
 
     &__like {
         align-self: flex-end;
@@ -61,10 +62,25 @@
         bottom: 15px;
         right: 25px;
     }
+    &--click{
+        background-color: $colour-tertiary;
+        color: white;
+        width: 60px;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 15px 15px 0px ;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        font-size: 1.5em;
+    }
 }
 
-.appetizer,
-.main,
+.appetizer
+,.main,
 .desert {
     padding-bottom: 40px;
     display: flex;
