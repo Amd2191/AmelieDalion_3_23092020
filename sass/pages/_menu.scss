@@ -46,6 +46,8 @@
         font-weight: bold;
         padding-bottom: 5px;
         font-size: 15px;
+        display: flex;
+        flex-wrap: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -54,15 +56,19 @@
         font-size: 12px;
         overflow: hidden;
         text-overflow: ellipsis;
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     &__price {
         font-weight: bold;
         position: absolute;
+        overflow: hidden;
+        text-overflow: ellipsis;
         bottom: 15px;
         right: 25px;
     }
-    &--click{
+    &--active{
         background-color: $colour-tertiary;
         color: white;
         width: 60px;
@@ -72,10 +78,10 @@
         justify-content: center;
         align-items: center;
         border-radius: 0px 15px 15px 0px ;
-        z-index: -1;
         right: 0;
         bottom: 0;
         font-size: 1.5em;
+        transform: scaleX(0);
     }
 }
 

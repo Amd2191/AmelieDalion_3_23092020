@@ -32,3 +32,44 @@ $darkshadow:0px 5px 5px darken(#c5c5c5,10%);
         transform-origin: 50% 0%;
     }
 }
+@keyframes hide{
+    0%{
+        transform: scaleX(1);
+        transform-origin: left 50%;
+        }
+    100%{
+        transform: scaleX(0.8);
+        transform-origin: left 50%;
+    }
+}
+@keyframes hide-reverse{
+    0%{
+        transform: scaleX(0.8);
+        transform-origin: left 50%;
+        }
+    100%{
+        transform: scaleX(1);
+        transform-origin: left 50%;
+    }
+}
+@keyframes show{
+    0%{
+        transform: scaleX(0);
+        transform-origin: 100% 100%;
+    }
+    100%{
+        transform: scaleX(1);
+        transform-origin: 100% 100%;
+    }
+}
+@keyframes show-reverse{
+    0%{
+        transform: scaleX(1);
+        transform-origin: 100% 100%;
+    }
+    100%{
+        
+        transform: scaleX(0);
+        transform-origin: 100% 100%;
+    }
+}

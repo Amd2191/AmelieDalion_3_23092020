@@ -1,6 +1,5 @@
-
-.loader{
-    width:20vw;
+.loader {
+    width: 20vw;
     height: 20vw;
     display: inline-block;
     border: 6px solid $colour-primary;
@@ -8,7 +7,8 @@
     border-radius: 50%;
     margin-top: 25vh;
     animation: spin 2s ease-in-out infinite;
-    &__wrapper{
+
+    &__wrapper {
         position: absolute;
         background-color: $light-grey;
         width: 100vw;
@@ -16,30 +16,61 @@
         text-align: center;
         animation: appear 1ms 2s ease-in-out;
         animation-fill-mode: both;
+        z-index: 1;
     }
 }
-.frame__like:hover path{
+
+.frame__like:hover path {
     fill: url(#gradient);
     stroke: transparent;
 }
-.card__like:hover path{
+
+.card__like:hover path {
     fill: url(#gradient);
     stroke: transparent;
 }
-.gradient{
-    &--bottom{
-        stop-color:$colour-secondary;
+
+.gradient {
+    &--bottom {
+        stop-color: $colour-secondary;
     }
-    &--top{
-        stop-color:$colour-primary;
+
+    &--top {
+        stop-color: $colour-primary;
     }
 }
-.appetizer{
-    animation:courses 0.8s ease-in 0.5s both;
+
+.appetizer {
+    animation: courses 0.8s ease-in 0.5s both;
 }
-.main{
-    animation:courses 0.8s ease-in 1.5s both;
+
+.main {
+    animation: courses 0.8s ease-in 1.5s both;
+}
+
+.desert {
+    animation: courses 0.8s ease-in 2.5s both;
+}
+
+.frame {
+    .frame--active{
+        animation: show-reverse 0.8s ease-in-out ;
     }
-.desert{
-    animation:courses 0.8s ease-in 2.5s both;
+    .frame__content {
+        animation: hide-reverse 0.8s ease-in-out both;
+    }
+    &:hover {
+        .frame__content {
+            animation: hide 0.8s ease-in-out both;
+        }
+
+        .frame--active {
+            animation: show 0.8s ease-in-out forwards;
+
+            i {
+                animation: spin 0.8s ease-in-out both;
+            }
+        }
+    }
+
 }
