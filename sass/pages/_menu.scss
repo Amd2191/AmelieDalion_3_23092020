@@ -1,5 +1,5 @@
 .restaurant-picture {
-    img {
+        img {
         width: 375px;
         height: 270px;
     }
@@ -9,12 +9,12 @@
 .menu {
     background-color: $light-grey;
     border-radius: 25px 25px 0px 0px;
-    position: relative;
-    top: -45px;
-    right: 0px;
+    margin-top: -45px;
     display: flex;
     flex-direction: column;
     padding: 40px 20px 60px 20px;
+    position: relative;
+    max-width: 375px;
 
     .card__like {
         position: absolute;
@@ -33,7 +33,7 @@
     position: relative;
     z-index: 1;
     background-color: white;
-    border-radius: 15px;
+    border-radius: $borderradius;
     box-shadow: $shadow;
     padding: 10px;
     margin-top: 15px;
@@ -41,34 +41,27 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        font-size: 14px;
     }
 
     &__text {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @include line-end;
     }
 
     &__name {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @include line-end;
         padding-bottom: 5px;
         font-size: 17px;
         font-weight: bold;
     }
 
     &__detail {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: 14px;
+        @include line-end;
     }
 
     &__price {
         align-self: flex-end;
         font-weight: bold;
-        font-size: 14px;
     }
 
     &--active {
@@ -80,16 +73,17 @@
         color: white;
         width: 60px;
         height: 100%;
-        border-radius: 0px 15px 15px 0px;
+        border-radius: 0px $borderradius $borderradius 0px;
         right: 0;
         bottom: 0;
-        font-size: 1.5em;
-        transform: scaleX(0);
+        i{
+            font-size: 20px;
+        }
     }
 }
 
 .appetizer,
-.main,
+.dish,
 .desert {
     padding-bottom: 40px;
     display: flex;

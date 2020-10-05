@@ -8,6 +8,14 @@ $green:#008766;
 $light-green:#99e2d0;
 $shadow:0px 5px 5px #c5c5c5;
 $darkshadow:0px 5px 5px darken(#c5c5c5, 10%);
+$borderradius:15px;
+$breakpoints:(
+    'S':(min-width:480 px),
+    'M':(min-width:600 px),
+    'L':(min-width:801 px),
+    'XL':(min-width:1025 px),
+    'XXL':(min-width:1025 px),
+);
 
 @keyframes heart {
     0% {
@@ -60,13 +68,11 @@ $darkshadow:0px 5px 5px darken(#c5c5c5, 10%);
 
 @keyframes hide {
     0% {
-        // transform: scaleX(1);
         width: 300px;
         transform-origin: left 50%;
     }
 
     100% {
-        // transform: scaleX(0.8);
         width: 200px;
         transform-origin: left 50%;
     }
@@ -86,13 +92,11 @@ $darkshadow:0px 5px 5px darken(#c5c5c5, 10%);
 
 @keyframes hide-reverse {
     0% {
-        // transform: scaleX(0.8);
         width: 200px;
         transform-origin: left 50%;
     }
 
     100% {
-        // transform: scaleX(1);
         width: 300px;
         transform-origin: left 50%;
     }
@@ -121,3 +125,4 @@ $darkshadow:0px 5px 5px darken(#c5c5c5, 10%);
         transform-origin: 100% 100%;
     }
 }
+

@@ -3,9 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-main {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
 }
@@ -19,7 +16,10 @@ h1 {
   font-weight: bold;
 }
 
-.menu h2 {
+h2 {
+  font-size: 16px;
+}
+h2 .menu {
   font-family: "Shrikhand", cursive;
   font-size: 24px;
   letter-spacing: 1px;
@@ -27,6 +27,7 @@ h1 {
 
 h3 {
   font-weight: bold;
+  font-size: 14px;
 }
 
 h4 {
@@ -168,7 +169,7 @@ a, a:visited, a:active {
   animation: courses 0.8s ease-in 0.5s both;
 }
 
-.main {
+.dish {
   animation: courses 0.8s ease-in 1.5s both;
 }
 
@@ -177,7 +178,7 @@ a, a:visited, a:active {
 }
 
 .frame .frame--active {
-  animation: show-reverse 0.8s ease-in-out;
+  animation: show-reverse 0.8s ease-in-out forwards;
 }
 .frame .frame__content {
   animation: hide-reverse 0.8s ease-in-out both;
@@ -186,7 +187,7 @@ a, a:visited, a:active {
   animation: hide 0.8s ease-in-out both;
 }
 .frame:hover .frame--active {
-  animation: show 0.8s ease-in-out forwards;
+  animation: show 0.8s ease-in-out backwards;
 }
 .frame:hover .frame--active i {
   animation: spin 0.8s ease-in-out both;
@@ -270,10 +271,6 @@ footer ul i {
   padding-right: 5px;
 }
 
-.width {
-  max-width: 375px;
-}
-
 input[type=search] {
   border: none;
   background: none;
@@ -319,7 +316,7 @@ input[type=search] {
 
 .step {
   background-color: #f6f6f6;
-  border-radius: 20px;
+  border-radius: 15px;
   height: 65px;
   width: 300px;
   display: flex;
@@ -445,12 +442,12 @@ input[type=search] {
 .menu {
   background-color: #f6f6f6;
   border-radius: 25px 25px 0px 0px;
-  position: relative;
-  top: -45px;
-  right: 0px;
+  margin-top: -45px;
   display: flex;
   flex-direction: column;
   padding: 40px 20px 60px 20px;
+  position: relative;
+  max-width: 375px;
 }
 .menu .card__like {
   position: absolute;
@@ -476,6 +473,7 @@ input[type=search] {
 .frame__content {
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
 }
 .frame__text {
   white-space: nowrap;
@@ -494,12 +492,10 @@ input[type=search] {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 14px;
 }
 .frame__price {
   align-self: flex-end;
   font-weight: bold;
-  font-size: 14px;
 }
 .frame--active {
   position: absolute;
@@ -513,12 +509,13 @@ input[type=search] {
   border-radius: 0px 15px 15px 0px;
   right: 0;
   bottom: 0;
-  font-size: 1.5em;
-  transform: scaleX(0);
+}
+.frame--active i {
+  font-size: 20px;
 }
 
 .appetizer,
-.main,
+.dish,
 .desert {
   padding-bottom: 40px;
   display: flex;
@@ -526,7 +523,7 @@ input[type=search] {
   justify-content: space-around;
 }
 .appetizer h3,
-.main h3,
+.dish h3,
 .desert h3 {
   font-weight: lighter;
   text-transform: uppercase;
@@ -535,7 +532,7 @@ input[type=search] {
   padding-bottom: 3px;
 }
 .appetizer h3:before,
-.main h3:before,
+.dish h3:before,
 .desert h3:before {
   content: "";
   position: absolute;

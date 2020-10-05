@@ -1,6 +1,3 @@
-.width{
-    max-width: 375px;
-}
 input[type="search"]{
     border: none;
     background: none;
@@ -44,7 +41,7 @@ input[type="search"]{
 
 .step{
     background-color: $light-grey;
-    border-radius: 20px;
+    border-radius: $borderradius;
     height: 65px;
     width: 300px;
     display: flex;

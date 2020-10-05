@@ -33,7 +33,7 @@
     animation: courses 0.8s ease-in 0.5s both;
 }
 
-.main {
+.dish {
     animation: courses 0.8s ease-in 1.5s both;
 }
 
@@ -43,7 +43,7 @@
 
 .frame {
     .frame--active {
-        animation: show-reverse 0.8s ease-in-out;
+        animation: show-reverse 0.8s ease-in-out forwards;
     }
 
     .frame__content {
@@ -57,7 +57,7 @@
         }
 
         .frame--active {
-            animation: show 0.8s ease-in-out forwards;
+            animation: show 0.8s ease-in-out backwards;
 
             i {
                 animation: spin 0.8s ease-in-out both;
