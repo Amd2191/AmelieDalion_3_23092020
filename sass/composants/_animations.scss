@@ -9,34 +9,23 @@
     animation: spin 2s ease-in-out infinite;
 
     &__wrapper {
-        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
         background-color: $light-grey;
         width: 100vw;
         height: 100vh;
         text-align: center;
-        animation: appear 1ms 2s ease-in-out;
+        animation: loader 1ms 2s ease-in-out;
         animation-fill-mode: both;
         z-index: 1;
     }
 }
 
-.frame__like:hover path {
-    fill: url(#gradient);
-    stroke: transparent;
-}
-
-.card__like:hover path {
-    fill: url(#gradient);
-    stroke: transparent;
-}
-
-.gradient {
-    &--bottom {
-        stop-color: $colour-secondary;
-    }
-
-    &--top {
-        stop-color: $colour-primary;
+.card__like:hover {
+    svg path {
+        fill: url(#gradient);
+        animation: heart 1s ease-in-out both;
     }
 }
 
@@ -53,12 +42,15 @@
 }
 
 .frame {
-    .frame--active{
-        animation: show-reverse 0.8s ease-in-out ;
+    .frame--active {
+        animation: show-reverse 0.8s ease-in-out;
     }
+
     .frame__content {
         animation: hide-reverse 0.8s ease-in-out both;
     }
+
+
     &:hover {
         .frame__content {
             animation: hide 0.8s ease-in-out both;
@@ -72,5 +64,4 @@
             }
         }
     }
-
 }

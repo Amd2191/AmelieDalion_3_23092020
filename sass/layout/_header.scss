@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     width: 100%;
     &__logo{
         display: flex;
@@ -27,5 +28,8 @@
     }
 }
 .welcome{
-    align-items: flex-start;
+    position: absolute;
+    margin:0 auto;
+    left:10px;
+    font-size: 1.3em;
 }

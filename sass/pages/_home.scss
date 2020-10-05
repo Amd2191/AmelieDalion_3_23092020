@@ -109,10 +109,10 @@ input[type="search"]{
         bottom:15px;
         right:25px;
         width: 25px;
-        path{
+        svg{
+            stroke: black;
             fill: transparent;
             stroke-width: 20px;
-            stroke: black;
         }
     }
     &--new{
