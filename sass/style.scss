@@ -1,7 +1,8 @@
 @import "./base/typography";
-@import "./base/base";
+
 @import "./utils/variables";
-@import "./utils/mixins";
+@import"./utils/mixins";
+@import "./base/base";
 @import "./composants/animations";
 @import"./composants/buttons";
 @import './layout/header';

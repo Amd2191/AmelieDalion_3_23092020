@@ -10,12 +10,12 @@ $shadow:0px 5px 5px #c5c5c5;
 $darkshadow:0px 5px 5px darken(#c5c5c5, 10%);
 $borderradius:15px;
 $breakpoints:(
-    'S':(min-width:480 px),
-    'M':(min-width:600 px),
-    'L':(min-width:801 px),
-    'XL':(min-width:1025 px),
-    'XXL':(min-width:1025 px),
-);
+    xsmall:320px,
+    small:375px,
+    medium:768px,
+    large:1084px,
+    x-large:1200px,
+    xx-large:1440px,);
 
 @keyframes heart {
     0% {

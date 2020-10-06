@@ -1,22 +1,42 @@
-footer{
-    background-color:#353535 ;
+footer {
+    background-color: #353535;
     color: white;
-    h4{
+    @include medium{
+        display: flex;
+        align-items: baseline;
+    }
+
+    h4 {
         padding: 12px;
         text-decoration: none;
     }
-    ul{
+
+    ul {
         list-style: none;
         padding-left: 12px;
         padding-bottom: 20px;
-        li{
-            padding-top:5px;
+        @include medium {
+            width: 90vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
-        a{
+
+        li {
+            padding-top: 5px;
+
+            @include medium {
+                display: flex;
+                padding-right: 15px;
+            }
+        }
+
+        a {
             text-decoration: none;
             color: white;
         }
-        i{
+
+        i {
             padding-right: 5px;
         }
     }

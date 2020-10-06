@@ -3,23 +3,39 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-@mixin S {
-      @media (max-width: map-get($breakpoints, S))
-    {@content;}
-}
-@mixin M {
-      @media (max-width: map-get($breakpoints, M))
-    {@content;}
-}
-@mixin L {
-      @media (max-width: map-get($breakpoints, L))
-    {@content;}
-}
-@mixin XL {
-      @media (max-width: map-get($breakpoints, XL))
-    {@content;}
-}
-@mixin XXL {
-      @media (max-width: map-get($breakpoints, XXL))
-    {@content;}
-}
+// Small devices -- screen sizes 320 px and up
+@mixin xsmall {
+    @media screen and (min-width: map-get($breakpoints,xsmall)) {
+        @content;
+    }
+ }
+// Small devices -- screen sizes 375 px and up
+@mixin small {
+    @media screen and (min-width: map-get($breakpoints,small)) {
+        @content;
+    }
+ }
+ // Medium devices-- screen sizes 768 px and up
+ @mixin medium {
+    @media screen and (min-width: map-get($breakpoints,medium)) {
+        @content;
+    }
+ }
+ // Large devices-- screen sizes 1084 px and up
+ @mixin large {
+    @media screen and (min-width: map-get($breakpoints,large)) {
+        @content;
+    }
+ }
+ // Extra large devices-- screen sizes 1200 px and up
+ @mixin xlarge {
+    @media screen and (min-width:map-get($breakpoints,x-large)) {
+        @content;
+    }
+ }
+ // Extra Extra large devices-- screen sizes 1440 px and up
+ @mixin xxlarge {
+    @media screen and (min-width: map-get($breakpoints,xx-large)) {
+        @content;
+    }
+ }

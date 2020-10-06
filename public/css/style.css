@@ -1,52 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-}
-
-.width {
-  max-width: 375px;
-}
-
-h1 {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 16px;
-}
-h2 .menu {
-  font-family: "Shrikhand", cursive;
-  font-size: 24px;
-  letter-spacing: 1px;
-}
-
-h3 {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-h4 {
-  font-family: "Shrikhand", cursive;
-  color: white;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
-}
-
-a, a:visited, a:active {
-  text-decoration: none;
-  color: inherit;
-}
-
 @keyframes heart {
   0% {
     fill-opacity: 0;
@@ -137,6 +90,80 @@ a, a:visited, a:active {
     transform-origin: 100% 100%;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 375px) {
+  .width {
+    min-width: 320px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .width {
+    min-width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .width {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 1084px) {
+  .width {
+    min-width: 1084px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .width {
+    min-width: 1200px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .width {
+    min-width: 1140px;
+  }
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 16px;
+}
+h2 .menu {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+h4 {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .loader {
   width: 20vw;
   height: 20vw;
@@ -244,12 +271,20 @@ a, a:visited, a:active {
   position: absolute;
   margin: 0 auto;
   left: 10px;
-  font-size: 1.3em;
+}
+.welcome i {
+  font-size: 20px;
 }
 
 footer {
   background-color: #353535;
   color: white;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    align-items: baseline;
+  }
 }
 footer h4 {
   padding: 12px;
@@ -260,8 +295,22 @@ footer ul {
   padding-left: 12px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  footer ul {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 footer ul li {
   padding-top: 5px;
+}
+@media screen and (min-width: 768px) {
+  footer ul li {
+    display: flex;
+    padding-right: 15px;
+  }
 }
 footer ul a {
   text-decoration: none;
@@ -287,12 +336,25 @@ input[type=search] {
 .introduction {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .introduction {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .introduction__explore {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .introduction__explore {
+    padding-bottom: 0px;
+    background-color: white;
+    padding-bottom: 25px;
+  }
 }
 .introduction__explore h1 {
   padding: 20px 60px 10px;
@@ -309,21 +371,58 @@ input[type=search] {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .introduction__operation {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 .introduction__operation h1 {
   padding: 50px 0px 35px 0px;
   align-self: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .introduction__operation h1 {
+    padding: 15px 0px 20px 0px;
+  }
+}
+@media screen and (min-width: 1084px) {
+  .introduction__operation h1 {
+    align-self: flex-start;
+    padding-top: 0px;
+  }
 }
 
 .step {
   background-color: #f6f6f6;
   border-radius: 15px;
   height: 65px;
-  width: 300px;
   display: flex;
   align-items: center;
   position: relative;
   margin-bottom: 20px;
   box-shadow: 0px 5px 5px #c5c5c5;
+}
+@media screen and (min-width: 1084px) {
+  .step__display {
+    display: flex;
+  }
+}
+@media screen and (min-width: 320px) {
+  .step {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .step {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .step {
+    width: 250px;
+    margin-right: 25px;
+  }
 }
 .step__number {
   background-color: #9356dc;
@@ -348,22 +447,50 @@ input[type=search] {
 
 .list {
   background-color: #f6f6f6;
-  padding-left: 20px;
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .list h1 {
   padding-top: 35px;
 }
+@media screen and (min-width: 768px) {
+  .list h1 {
+    width: 95vw;
+    align-self: center;
+    padding-left: 20px;
+  }
+}
 
 .card {
-  width: 335px;
   height: 230px;
   border-radius: 15px;
   position: relative;
   box-shadow: 0px 5px 5px #c5c5c5;
   margin-top: 20px;
+}
+@media screen and (min-width: 320px) {
+  .card {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .card {
+    width: 335px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    margin: 15px;
+  }
 }
 .card__description {
   background-color: white;

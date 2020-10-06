@@ -6,7 +6,24 @@
     font-size: 12px;
 }
 .width{
-    max-width: 375px;
+    @include small{
+        min-width: 320px;
+    }
+    @include small{
+        min-width: 375px;
+    }
+    @include medium{
+        min-width: 768px;
+    }
+    @include large{
+        min-width: 1084px;
+    }
+    @include xlarge{
+        min-width: 1200px;
+    }
+    @include xxlarge{
+        min-width: 1140px;
+    }
 }
 h1{
     font-size: 22px;
