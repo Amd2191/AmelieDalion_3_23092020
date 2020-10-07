@@ -36,6 +36,11 @@ h2{
     font-size: 24px;
     letter-spacing: 1px;
     }
+    .restaurant-name{
+        @include large {
+            font-size: 25px;
+        }
+    }
 }
 h3{
     font-weight: bold;

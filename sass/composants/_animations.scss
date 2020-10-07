@@ -47,13 +47,19 @@
     }
 
     .frame__content {
-        animation: hide-reverse 0.8s ease-in-out both;
+        animation: hide-reverse-xsmall 0.8s ease-in-out both;
+        @include small{
+            animation: hide-reverse 0.8s ease-in-out both;
+        }
     }
 
 
     &:hover {
         .frame__content {
-            animation: hide 0.8s ease-in-out both;
+            animation: hide-xsmall 0.8s ease-in-out both;
+            @include small{
+                animation: hide 0.8s ease-in-out both;
+            }
         }
 
         .frame--active {
