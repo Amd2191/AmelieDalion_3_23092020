@@ -382,6 +382,11 @@ input[type=search] {
     padding: 10px 0px 10px 0px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .introduction {
+    padding: 43px 0px 43px 0px;
+  }
+}
 .introduction__explore {
   background-color: #f6f6f6;
   display: flex;

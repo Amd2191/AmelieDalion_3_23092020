@@ -21,7 +21,9 @@ input[type="search"] {
     @include large {
         padding: 10px 0px 10px 0px;
     }
-
+    @include xxlarge{
+        padding: 43px 0px 43px 0px;
+    }
     &__explore {
         background-color: $light-grey;
         display: flex;
